@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
+    <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>ChartData Display</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/chartist.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN CHAMELEON  CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/app.css">
+    <!-- END CHAMELEON  CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/chat-application.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-analytics.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END Custom CSS-->
+  </head>
+  
+  
+  <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="2-columns">
+  	<!-- 页面顶端按钮（缩放&查询） -->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light"> 
+      <div class="navbar-wrapper">
+        <div class="navbar-container content">
+          <div class="collapse navbar-collapse show" id="navbar-mobile">
+            <ul class="nav navbar-nav mr-auto float-left">
+              <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+              <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+              
+              <li class="nav-item dropdown navbar-search"><a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#"><i class="ficon ft-search"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="arrow_box">
+                    <form>
+                      <div class="input-group search-box">
+                        <div class="position-relative has-icon-right full-width">
+                          <input class="form-control" id="search" type="text" placeholder="Search here...">
+                          <div class="form-control-position navbar-search-close"><i class="ft-x"></i></div>
+                        </div>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true" data-img="app-assets/images/backgrounds/02.jpg">
+      <!-- 左上角返回初始页面按钮 -->
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">       
+          <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="Chameleon admin logo" src="app-assets/images/logo/logo.png"/>
+              <h3 class="brand-text">ChartData Display</h3></a></li>
+          <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
+        </ul>
+      </div>
+      <!-- 导航栏展示 -->
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="#"><i class="ft-grid"></i><span class="menu-title" data-i18n="">Tables</span></a>
+            <ul class="menu-content">
+              <li><a class="menu-item" href="dt-basic-initialization.html">All Data Tables</a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="ft-bar-chart-2"></i><span class="menu-title" data-i18n="">Charts</span></a>
+            <ul class="menu-content">
+              <!-- <li><a class="menu-item" href="chartist-charts.html">Histogram</a> -->
+              </li>
+              <li><a class="menu-item" href="chartjs-charts.html">Chart</a>
+              </li>
+              <!-- 
+<li><a class="menu-item" href="#">Circle chart</a>
+                <ul class="menu-content">
+                  <li><a class="menu-item" href="google-maps.html">Circle chart - 1</a>
+                  </li>
+                  <li><a class="menu-item" href="jvector-maps.html">Circle chart - 2</a>
+                  </li>
+                </ul>
+              </li>
+ -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation-background"></div>
+    </div>
+
+
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+       	<div class="content-header row">
+          <div class="content-header-left col-md-4 col-12 mb-2">
+            <h3 class="content-header-title">Data Tables</h3>
+          </div>
+          <div class="content-header-right col-md-8 col-12">
+            <div class="breadcrumbs-top float-md-right">
+              <div class="breadcrumb-wrapper mr-1">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">Tables</a>
+                  </li>
+                  <li class="breadcrumb-item active">Data Tables
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-body"><!-- Zero configuration table -->
+		<section id="configuration">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Part of Data</h4>
+                    <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                        <ul class="list-inline mb-0">
+                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-content collapse show">
+                    <div class="card-body card-dashboard">
+                        <p class="card-text">Here is part of the data display</p>
+                        <table class="table table-striped table-bordered zero-configuration">
+                           <thead>
+                                <tr>
+                                    <th>Rank</th>
+									<th>Name</th>
+									<th>Platform</th>
+									<th>Year</th>
+									<th>Genre</th>
+									<th>Publisher</th>
+									<th>NA_Sales</th>
+									<th>EU_Sales</th>
+									<th>JP_Sales</th>
+									<th>Other_Sales</th>
+									<th>Global_Sales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               	<tr>
+	<th scope="row">0</th>
+	<td>Name</td>
+	<td>Platform</td>
+	<td>Year</td>
+	<td>Genre</td>
+	<td>Publisher</td>
+	<td>NA_Sales</td>
+	<td>EU_Sales</td>
+	<td>JP_Sales</td>
+	<td>Other_Sales</td>
+	<td>Global_Sales</td>
+</tr>
+<tr>
+	<th scope="row">1</th>
+	<td>Wii Sports</td>
+	<td>Wii</td>
+	<td>2006</td>
+	<td>Sports</td>
+	<td>Nintendo</td>
+	<td>41.49</td>
+	<td>29.02</td>
+	<td>3.77</td>
+	<td>8.46</td>
+	<td>82.74</td>
+</tr>
+<tr>
+	<th scope="row">2</th>
+	<td>Super Mario Bros.</td>
+	<td>NES</td>
+	<td>1985</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>29.08</td>
+	<td>3.58</td>
+	<td>6.81</td>
+	<td>0.77</td>
+	<td>40.24</td>
+</tr>
+<tr>
+	<th scope="row">3</th>
+	<td>Mario Kart Wii</td>
+	<td>Wii</td>
+	<td>2008</td>
+	<td>Racing</td>
+	<td>Nintendo</td>
+	<td>15.85</td>
+	<td>12.88</td>
+	<td>3.79</td>
+	<td>3.31</td>
+	<td>35.82</td>
+</tr>
+<tr>
+	<th scope="row">4</th>
+	<td>Wii Sports Resort</td>
+	<td>Wii</td>
+	<td>2009</td>
+	<td>Sports</td>
+	<td>Nintendo</td>
+	<td>15.75</td>
+	<td>11.01</td>
+	<td>3.28</td>
+	<td>2.96</td>
+	<td>33</td>
+</tr>
+<tr>
+	<th scope="row">5</th>
+	<td>Pokemon Red/Pokemon Blue</td>
+	<td>GB</td>
+	<td>1996</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>11.27</td>
+	<td>8.89</td>
+	<td>10.22</td>
+	<td>1</td>
+	<td>31.37</td>
+</tr>
+<tr>
+	<th scope="row">6</th>
+	<td>Tetris</td>
+	<td>GB</td>
+	<td>1989</td>
+	<td>Puzzle</td>
+	<td>Nintendo</td>
+	<td>23.2</td>
+	<td>2.26</td>
+	<td>4.22</td>
+	<td>0.58</td>
+	<td>30.26</td>
+</tr>
+<tr>
+	<th scope="row">7</th>
+	<td>New Super Mario Bros.</td>
+	<td>DS</td>
+	<td>2006</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>11.38</td>
+	<td>9.23</td>
+	<td>6.5</td>
+	<td>2.9</td>
+	<td>30.01</td>
+</tr>
+<tr>
+	<th scope="row">8</th>
+	<td>Wii Play</td>
+	<td>Wii</td>
+	<td>2006</td>
+	<td>Misc</td>
+	<td>Nintendo</td>
+	<td>14.03</td>
+	<td>9.2</td>
+	<td>2.93</td>
+	<td>2.85</td>
+	<td>29.02</td>
+</tr>
+<tr>
+	<th scope="row">9</th>
+	<td>New Super Mario Bros. Wii</td>
+	<td>Wii</td>
+	<td>2009</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>14.59</td>
+	<td>7.06</td>
+	<td>4.7</td>
+	<td>2.26</td>
+	<td>28.62</td>
+</tr>
+<tr>
+	<th scope="row">10</th>
+	<td>Duck Hunt</td>
+	<td>NES</td>
+	<td>1984</td>
+	<td>Shooter</td>
+	<td>Nintendo</td>
+	<td>26.93</td>
+	<td>0.63</td>
+	<td>0.28</td>
+	<td>0.47</td>
+	<td>28.31</td>
+</tr>
+<tr>
+	<th scope="row">11</th>
+	<td>Nintendogs</td>
+	<td>DS</td>
+	<td>2005</td>
+	<td>Simulation</td>
+	<td>Nintendo</td>
+	<td>9.07</td>
+	<td>11</td>
+	<td>1.93</td>
+	<td>2.75</td>
+	<td>24.76</td>
+</tr>
+<tr>
+	<th scope="row">12</th>
+	<td>Mario Kart DS</td>
+	<td>DS</td>
+	<td>2005</td>
+	<td>Racing</td>
+	<td>Nintendo</td>
+	<td>9.81</td>
+	<td>7.57</td>
+	<td>4.13</td>
+	<td>1.92</td>
+	<td>23.42</td>
+</tr>
+<tr>
+	<th scope="row">13</th>
+	<td>Pokemon Gold/Pokemon Silver</td>
+	<td>GB</td>
+	<td>1999</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>9</td>
+	<td>6.18</td>
+	<td>7.2</td>
+	<td>0.71</td>
+	<td>23.1</td>
+</tr>
+<tr>
+	<th scope="row">14</th>
+	<td>Wii Fit</td>
+	<td>Wii</td>
+	<td>2007</td>
+	<td>Sports</td>
+	<td>Nintendo</td>
+	<td>8.94</td>
+	<td>8.03</td>
+	<td>3.6</td>
+	<td>2.15</td>
+	<td>22.72</td>
+</tr>
+<tr>
+	<th scope="row">15</th>
+	<td>Wii Fit Plus</td>
+	<td>Wii</td>
+	<td>2009</td>
+	<td>Sports</td>
+	<td>Nintendo</td>
+	<td>9.09</td>
+	<td>8.59</td>
+	<td>2.53</td>
+	<td>1.79</td>
+	<td>22</td>
+</tr>
+<tr>
+	<th scope="row">16</th>
+	<td>Kinect Adventures!</td>
+	<td>X360</td>
+	<td>2010</td>
+	<td>Misc</td>
+	<td>Microsoft Game Studios</td>
+	<td>14.97</td>
+	<td>4.94</td>
+	<td>0.24</td>
+	<td>1.67</td>
+	<td>21.82</td>
+</tr>
+<tr>
+	<th scope="row">17</th>
+	<td>Grand Theft Auto V</td>
+	<td>PS3</td>
+	<td>2013</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>7.01</td>
+	<td>9.27</td>
+	<td>0.97</td>
+	<td>4.14</td>
+	<td>21.4</td>
+</tr>
+<tr>
+	<th scope="row">18</th>
+	<td>Grand Theft Auto: San Andreas</td>
+	<td>PS2</td>
+	<td>2004</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>9.43</td>
+	<td>0.4</td>
+	<td>0.41</td>
+	<td>10.57</td>
+	<td>20.81</td>
+</tr>
+<tr>
+	<th scope="row">19</th>
+	<td>Super Mario World</td>
+	<td>SNES</td>
+	<td>1990</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>12.78</td>
+	<td>3.75</td>
+	<td>3.54</td>
+	<td>0.55</td>
+	<td>20.61</td>
+</tr>
+<tr>
+	<th scope="row">20</th>
+	<td>Brain Age: Train Your Brain in Minutes a Day</td>
+	<td>DS</td>
+	<td>2005</td>
+	<td>Misc</td>
+	<td>Nintendo</td>
+	<td>4.75</td>
+	<td>9.26</td>
+	<td>4.16</td>
+	<td>2.05</td>
+	<td>20.22</td>
+</tr>
+<tr>
+	<th scope="row">21</th>
+	<td>Pokemon Diamond/Pokemon Pearl</td>
+	<td>DS</td>
+	<td>2006</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>6.42</td>
+	<td>4.52</td>
+	<td>6.04</td>
+	<td>1.37</td>
+	<td>18.36</td>
+</tr>
+<tr>
+	<th scope="row">22</th>
+	<td>Super Mario Land</td>
+	<td>GB</td>
+	<td>1989</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>10.83</td>
+	<td>2.71</td>
+	<td>4.18</td>
+	<td>0.42</td>
+	<td>18.14</td>
+</tr>
+<tr>
+	<th scope="row">23</th>
+	<td>Super Mario Bros. 3</td>
+	<td>NES</td>
+	<td>1988</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>9.54</td>
+	<td>3.44</td>
+	<td>3.84</td>
+	<td>0.46</td>
+	<td>17.28</td>
+</tr>
+<tr>
+	<th scope="row">24</th>
+	<td>Grand Theft Auto V</td>
+	<td>X360</td>
+	<td>2013</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>9.63</td>
+	<td>5.31</td>
+	<td>0.06</td>
+	<td>1.38</td>
+	<td>16.38</td>
+</tr>
+<tr>
+	<th scope="row">25</th>
+	<td>Grand Theft Auto: Vice City</td>
+	<td>PS2</td>
+	<td>2002</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>8.41</td>
+	<td>5.49</td>
+	<td>0.47</td>
+	<td>1.78</td>
+	<td>16.15</td>
+</tr>
+<tr>
+	<th scope="row">26</th>
+	<td>Pokemon Ruby/Pokemon Sapphire</td>
+	<td>GBA</td>
+	<td>2002</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>6.06</td>
+	<td>3.9</td>
+	<td>5.38</td>
+	<td>0.5</td>
+	<td>15.85</td>
+</tr>
+<tr>
+	<th scope="row">27</th>
+	<td>Pokemon Black/Pokemon White</td>
+	<td>DS</td>
+	<td>2010</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>5.57</td>
+	<td>3.28</td>
+	<td>5.65</td>
+	<td>0.82</td>
+	<td>15.32</td>
+</tr>
+<tr>
+	<th scope="row">28</th>
+	<td>Brain Age 2: More Training in Minutes a Day</td>
+	<td>DS</td>
+	<td>2005</td>
+	<td>Puzzle</td>
+	<td>Nintendo</td>
+	<td>3.44</td>
+	<td>5.36</td>
+	<td>5.32</td>
+	<td>1.18</td>
+	<td>15.3</td>
+</tr>
+<tr>
+	<th scope="row">29</th>
+	<td>Gran Turismo 3: A-Spec</td>
+	<td>PS2</td>
+	<td>2001</td>
+	<td>Racing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>6.85</td>
+	<td>5.09</td>
+	<td>1.87</td>
+	<td>1.16</td>
+	<td>14.98</td>
+</tr>
+<tr>
+	<th scope="row">30</th>
+	<td>Call of Duty: Modern Warfare 3</td>
+	<td>X360</td>
+	<td>2011</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>9.03</td>
+	<td>4.28</td>
+	<td>0.13</td>
+	<td>1.32</td>
+	<td>14.76</td>
+</tr>
+<tr>
+	<th scope="row">31</th>
+	<td>Pokémon Yellow: Special Pikachu Edition</td>
+	<td>GB</td>
+	<td>1998</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>5.89</td>
+	<td>5.04</td>
+	<td>3.12</td>
+	<td>0.59</td>
+	<td>14.64</td>
+</tr>
+<tr>
+	<th scope="row">32</th>
+	<td>Call of Duty: Black Ops</td>
+	<td>X360</td>
+	<td>2010</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>9.67</td>
+	<td>3.73</td>
+	<td>0.11</td>
+	<td>1.13</td>
+	<td>14.64</td>
+</tr>
+<tr>
+	<th scope="row">33</th>
+	<td>Pokemon X/Pokemon Y</td>
+	<td>3DS</td>
+	<td>2013</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>5.17</td>
+	<td>4.05</td>
+	<td>4.34</td>
+	<td>0.79</td>
+	<td>14.35</td>
+</tr>
+<tr>
+	<th scope="row">34</th>
+	<td>Call of Duty: Black Ops 3</td>
+	<td>PS4</td>
+	<td>2015</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>5.77</td>
+	<td>5.81</td>
+	<td>0.35</td>
+	<td>2.31</td>
+	<td>14.24</td>
+</tr>
+<tr>
+	<th scope="row">35</th>
+	<td>Call of Duty: Black Ops II</td>
+	<td>PS3</td>
+	<td>2012</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>4.99</td>
+	<td>5.88</td>
+	<td>0.65</td>
+	<td>2.52</td>
+	<td>14.03</td>
+</tr>
+<tr>
+	<th scope="row">36</th>
+	<td>Call of Duty: Black Ops II</td>
+	<td>X360</td>
+	<td>2012</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>8.25</td>
+	<td>4.3</td>
+	<td>0.07</td>
+	<td>1.12</td>
+	<td>13.73</td>
+</tr>
+<tr>
+	<th scope="row">37</th>
+	<td>Call of Duty: Modern Warfare 2</td>
+	<td>X360</td>
+	<td>2009</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>8.52</td>
+	<td>3.63</td>
+	<td>0.08</td>
+	<td>1.29</td>
+	<td>13.51</td>
+</tr>
+<tr>
+	<th scope="row">38</th>
+	<td>Call of Duty: Modern Warfare 3</td>
+	<td>PS3</td>
+	<td>2011</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>5.54</td>
+	<td>5.82</td>
+	<td>0.49</td>
+	<td>1.62</td>
+	<td>13.46</td>
+</tr>
+<tr>
+	<th scope="row">39</th>
+	<td>Grand Theft Auto III</td>
+	<td>PS2</td>
+	<td>2001</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>6.99</td>
+	<td>4.51</td>
+	<td>0.3</td>
+	<td>1.3</td>
+	<td>13.1</td>
+</tr>
+<tr>
+	<th scope="row">40</th>
+	<td>Super Smash Bros. Brawl</td>
+	<td>Wii</td>
+	<td>2008</td>
+	<td>Fighting</td>
+	<td>Nintendo</td>
+	<td>6.75</td>
+	<td>2.61</td>
+	<td>2.66</td>
+	<td>1.02</td>
+	<td>13.04</td>
+</tr>
+<tr>
+	<th scope="row">41</th>
+	<td>Call of Duty: Black Ops</td>
+	<td>PS3</td>
+	<td>2010</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>5.98</td>
+	<td>4.44</td>
+	<td>0.48</td>
+	<td>1.83</td>
+	<td>12.73</td>
+</tr>
+<tr>
+	<th scope="row">42</th>
+	<td>Animal Crossing: Wild World</td>
+	<td>DS</td>
+	<td>2005</td>
+	<td>Simulation</td>
+	<td>Nintendo</td>
+	<td>2.55</td>
+	<td>3.52</td>
+	<td>5.33</td>
+	<td>0.88</td>
+	<td>12.27</td>
+</tr>
+<tr>
+	<th scope="row">43</th>
+	<td>Mario Kart 7</td>
+	<td>3DS</td>
+	<td>2011</td>
+	<td>Racing</td>
+	<td>Nintendo</td>
+	<td>4.74</td>
+	<td>3.91</td>
+	<td>2.67</td>
+	<td>0.89</td>
+	<td>12.21</td>
+</tr>
+<tr>
+	<th scope="row">44</th>
+	<td>Halo 3</td>
+	<td>X360</td>
+	<td>2007</td>
+	<td>Shooter</td>
+	<td>Microsoft Game Studios</td>
+	<td>7.97</td>
+	<td>2.83</td>
+	<td>0.13</td>
+	<td>1.21</td>
+	<td>12.14</td>
+</tr>
+<tr>
+	<th scope="row">45</th>
+	<td>Grand Theft Auto V</td>
+	<td>PS4</td>
+	<td>2014</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>3.8</td>
+	<td>5.81</td>
+	<td>0.36</td>
+	<td>2.02</td>
+	<td>11.98</td>
+</tr>
+<tr>
+	<th scope="row">46</th>
+	<td>Pokemon HeartGold/Pokemon SoulSilver</td>
+	<td>DS</td>
+	<td>2009</td>
+	<td>Action</td>
+	<td>Nintendo</td>
+	<td>4.4</td>
+	<td>2.77</td>
+	<td>3.96</td>
+	<td>0.77</td>
+	<td>11.9</td>
+</tr>
+<tr>
+	<th scope="row">47</th>
+	<td>Super Mario 64</td>
+	<td>N64</td>
+	<td>1996</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>6.91</td>
+	<td>2.85</td>
+	<td>1.91</td>
+	<td>0.23</td>
+	<td>11.89</td>
+</tr>
+<tr>
+	<th scope="row">48</th>
+	<td>Gran Turismo 4</td>
+	<td>PS2</td>
+	<td>2004</td>
+	<td>Racing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>3.01</td>
+	<td>0.01</td>
+	<td>1.1</td>
+	<td>7.53</td>
+	<td>11.66</td>
+</tr>
+<tr>
+	<th scope="row">49</th>
+	<td>Super Mario Galaxy</td>
+	<td>Wii</td>
+	<td>2007</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>6.16</td>
+	<td>3.4</td>
+	<td>1.2</td>
+	<td>0.76</td>
+	<td>11.52</td>
+</tr>
+<tr>
+	<th scope="row">50</th>
+	<td>Pokemon Omega Ruby/Pokemon Alpha Sapphire</td>
+	<td>3DS</td>
+	<td>2014</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>4.23</td>
+	<td>3.37</td>
+	<td>3.08</td>
+	<td>0.65</td>
+	<td>11.33</td>
+</tr>
+<tr>
+	<th scope="row">51</th>
+	<td>Super Mario Land 2: 6 Golden Coins</td>
+	<td>GB</td>
+	<td>1992</td>
+	<td>Adventure</td>
+	<td>Nintendo</td>
+	<td>6.16</td>
+	<td>2.04</td>
+	<td>2.69</td>
+	<td>0.29</td>
+	<td>11.18</td>
+</tr>
+<tr>
+	<th scope="row">52</th>
+	<td>Grand Theft Auto IV</td>
+	<td>X360</td>
+	<td>2008</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>6.76</td>
+	<td>3.1</td>
+	<td>0.14</td>
+	<td>1.03</td>
+	<td>11.02</td>
+</tr>
+<tr>
+	<th scope="row">53</th>
+	<td>Gran Turismo</td>
+	<td>PS</td>
+	<td>1997</td>
+	<td>Racing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>4.02</td>
+	<td>3.87</td>
+	<td>2.54</td>
+	<td>0.52</td>
+	<td>10.95</td>
+</tr>
+<tr>
+	<th scope="row">54</th>
+	<td>Super Mario 3D Land</td>
+	<td>3DS</td>
+	<td>2011</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>4.89</td>
+	<td>2.99</td>
+	<td>2.13</td>
+	<td>0.78</td>
+	<td>10.79</td>
+</tr>
+<tr>
+	<th scope="row">55</th>
+	<td>Gran Turismo 5</td>
+	<td>PS3</td>
+	<td>2010</td>
+	<td>Racing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>2.96</td>
+	<td>4.88</td>
+	<td>0.81</td>
+	<td>2.12</td>
+	<td>10.77</td>
+</tr>
+<tr>
+	<th scope="row">56</th>
+	<td>Call of Duty: Modern Warfare 2</td>
+	<td>PS3</td>
+	<td>2009</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>4.99</td>
+	<td>3.69</td>
+	<td>0.38</td>
+	<td>1.63</td>
+	<td>10.69</td>
+</tr>
+<tr>
+	<th scope="row">57</th>
+	<td>Grand Theft Auto IV</td>
+	<td>PS3</td>
+	<td>2008</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>4.76</td>
+	<td>3.76</td>
+	<td>0.44</td>
+	<td>1.62</td>
+	<td>10.57</td>
+</tr>
+<tr>
+	<th scope="row">58</th>
+	<td>Super Mario All-Stars</td>
+	<td>SNES</td>
+	<td>1993</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>5.99</td>
+	<td>2.15</td>
+	<td>2.12</td>
+	<td>0.29</td>
+	<td>10.55</td>
+</tr>
+<tr>
+	<th scope="row">59</th>
+	<td>Pokemon FireRed/Pokemon LeafGreen</td>
+	<td>GBA</td>
+	<td>2004</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>4.34</td>
+	<td>2.65</td>
+	<td>3.15</td>
+	<td>0.35</td>
+	<td>10.49</td>
+</tr>
+<tr>
+	<th scope="row">60</th>
+	<td>Super Mario 64</td>
+	<td>DS</td>
+	<td>2004</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>5.08</td>
+	<td>3.11</td>
+	<td>1.25</td>
+	<td>0.98</td>
+	<td>10.42</td>
+</tr>
+<tr>
+	<th scope="row">61</th>
+	<td>Just Dance 3</td>
+	<td>Wii</td>
+	<td>2011</td>
+	<td>Misc</td>
+	<td>Ubisoft</td>
+	<td>6.05</td>
+	<td>3.15</td>
+	<td>0</td>
+	<td>1.07</td>
+	<td>10.26</td>
+</tr>
+<tr>
+	<th scope="row">62</th>
+	<td>Call of Duty: Ghosts</td>
+	<td>X360</td>
+	<td>2013</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>6.72</td>
+	<td>2.63</td>
+	<td>0.04</td>
+	<td>0.82</td>
+	<td>10.21</td>
+</tr>
+<tr>
+	<th scope="row">63</th>
+	<td>Halo: Reach</td>
+	<td>X360</td>
+	<td>2010</td>
+	<td>Shooter</td>
+	<td>Microsoft Game Studios</td>
+	<td>7.03</td>
+	<td>1.98</td>
+	<td>0.08</td>
+	<td>0.78</td>
+	<td>9.88</td>
+</tr>
+<tr>
+	<th scope="row">64</th>
+	<td>Mario Kart 64</td>
+	<td>N64</td>
+	<td>1996</td>
+	<td>Racing</td>
+	<td>Nintendo</td>
+	<td>5.55</td>
+	<td>1.94</td>
+	<td>2.23</td>
+	<td>0.15</td>
+	<td>9.87</td>
+</tr>
+<tr>
+	<th scope="row">65</th>
+	<td>New Super Mario Bros. 2</td>
+	<td>3DS</td>
+	<td>2012</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>3.66</td>
+	<td>3.07</td>
+	<td>2.47</td>
+	<td>0.63</td>
+	<td>9.82</td>
+</tr>
+<tr>
+	<th scope="row">66</th>
+	<td>Halo 4</td>
+	<td>X360</td>
+	<td>2012</td>
+	<td>Shooter</td>
+	<td>Microsoft Game Studios</td>
+	<td>6.63</td>
+	<td>2.36</td>
+	<td>0.04</td>
+	<td>0.73</td>
+	<td>9.76</td>
+</tr>
+<tr>
+	<th scope="row">67</th>
+	<td>Final Fantasy VII</td>
+	<td>PS</td>
+	<td>1997</td>
+	<td>Role-Playing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>3.01</td>
+	<td>2.47</td>
+	<td>3.28</td>
+	<td>0.96</td>
+	<td>9.72</td>
+</tr>
+<tr>
+	<th scope="row">68</th>
+	<td>Call of Duty: Ghosts</td>
+	<td>PS3</td>
+	<td>2013</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>4.09</td>
+	<td>3.73</td>
+	<td>0.38</td>
+	<td>1.38</td>
+	<td>9.59</td>
+</tr>
+<tr>
+	<th scope="row">69</th>
+	<td>Just Dance 2</td>
+	<td>Wii</td>
+	<td>2010</td>
+	<td>Misc</td>
+	<td>Ubisoft</td>
+	<td>5.84</td>
+	<td>2.89</td>
+	<td>0.01</td>
+	<td>0.78</td>
+	<td>9.52</td>
+</tr>
+<tr>
+	<th scope="row">70</th>
+	<td>Gran Turismo 2</td>
+	<td>PS</td>
+	<td>1999</td>
+	<td>Racing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>3.88</td>
+	<td>3.42</td>
+	<td>1.69</td>
+	<td>0.5</td>
+	<td>9.49</td>
+</tr>
+<tr>
+	<th scope="row">71</th>
+	<td>Call of Duty 4: Modern Warfare</td>
+	<td>X360</td>
+	<td>2007</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>5.91</td>
+	<td>2.38</td>
+	<td>0.13</td>
+	<td>0.9</td>
+	<td>9.32</td>
+</tr>
+<tr>
+	<th scope="row">72</th>
+	<td>Donkey Kong Country</td>
+	<td>SNES</td>
+	<td>1994</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>4.36</td>
+	<td>1.71</td>
+	<td>3</td>
+	<td>0.23</td>
+	<td>9.3</td>
+</tr>
+<tr>
+	<th scope="row">73</th>
+	<td>Minecraft</td>
+	<td>X360</td>
+	<td>2013</td>
+	<td>Misc</td>
+	<td>Microsoft Game Studios</td>
+	<td>5.58</td>
+	<td>2.83</td>
+	<td>0.02</td>
+	<td>0.77</td>
+	<td>9.2</td>
+</tr>
+<tr>
+	<th scope="row">74</th>
+	<td>Animal Crossing: New Leaf</td>
+	<td>3DS</td>
+	<td>2012</td>
+	<td>Simulation</td>
+	<td>Nintendo</td>
+	<td>2.01</td>
+	<td>2.32</td>
+	<td>4.36</td>
+	<td>0.41</td>
+	<td>9.09</td>
+</tr>
+<tr>
+	<th scope="row">75</th>
+	<td>Mario Party DS</td>
+	<td>DS</td>
+	<td>2007</td>
+	<td>Misc</td>
+	<td>Nintendo</td>
+	<td>4.46</td>
+	<td>1.88</td>
+	<td>1.98</td>
+	<td>0.7</td>
+	<td>9.02</td>
+</tr>
+<tr>
+	<th scope="row">76</th>
+	<td>The Elder Scrolls V: Skyrim</td>
+	<td>X360</td>
+	<td>2011</td>
+	<td>Role-Playing</td>
+	<td>Bethesda Softworks</td>
+	<td>5.03</td>
+	<td>2.86</td>
+	<td>0.1</td>
+	<td>0.85</td>
+	<td>8.84</td>
+</tr>
+<tr>
+	<th scope="row">77</th>
+	<td>Super Mario Kart</td>
+	<td>SNES</td>
+	<td>1992</td>
+	<td>Racing</td>
+	<td>Nintendo</td>
+	<td>3.54</td>
+	<td>1.24</td>
+	<td>3.81</td>
+	<td>0.18</td>
+	<td>8.76</td>
+</tr>
+<tr>
+	<th scope="row">78</th>
+	<td>FIFA 16</td>
+	<td>PS4</td>
+	<td>2015</td>
+	<td>Sports</td>
+	<td>Electronic Arts</td>
+	<td>1.11</td>
+	<td>6.06</td>
+	<td>0.06</td>
+	<td>1.26</td>
+	<td>8.49</td>
+</tr>
+<tr>
+	<th scope="row">79</th>
+	<td>Wii Party</td>
+	<td>Wii</td>
+	<td>2010</td>
+	<td>Misc</td>
+	<td>Nintendo</td>
+	<td>1.79</td>
+	<td>3.53</td>
+	<td>2.49</td>
+	<td>0.68</td>
+	<td>8.49</td>
+</tr>
+<tr>
+	<th scope="row">80</th>
+	<td>Halo 2</td>
+	<td>XB</td>
+	<td>2004</td>
+	<td>Shooter</td>
+	<td>Microsoft Game Studios</td>
+	<td>6.82</td>
+	<td>1.53</td>
+	<td>0.05</td>
+	<td>0.08</td>
+	<td>8.49</td>
+</tr>
+<tr>
+	<th scope="row">81</th>
+	<td>Mario Party 8</td>
+	<td>Wii</td>
+	<td>2007</td>
+	<td>Misc</td>
+	<td>Nintendo</td>
+	<td>3.81</td>
+	<td>2.3</td>
+	<td>1.58</td>
+	<td>0.73</td>
+	<td>8.42</td>
+</tr>
+<tr>
+	<th scope="row">82</th>
+	<td>Pokemon Black 2/Pokemon White 2</td>
+	<td>DS</td>
+	<td>2012</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>2.91</td>
+	<td>1.86</td>
+	<td>3.14</td>
+	<td>0.43</td>
+	<td>8.33</td>
+</tr>
+<tr>
+	<th scope="row">83</th>
+	<td>FIFA Soccer 13</td>
+	<td>PS3</td>
+	<td>2012</td>
+	<td>Action</td>
+	<td>Electronic Arts</td>
+	<td>1.06</td>
+	<td>5.05</td>
+	<td>0.13</td>
+	<td>2.01</td>
+	<td>8.24</td>
+</tr>
+<tr>
+	<th scope="row">84</th>
+	<td>The Sims 3</td>
+	<td>PC</td>
+	<td>2009</td>
+	<td>Simulation</td>
+	<td>Electronic Arts</td>
+	<td>0.98</td>
+	<td>6.42</td>
+	<td>0</td>
+	<td>0.71</td>
+	<td>8.11</td>
+</tr>
+<tr>
+	<th scope="row">85</th>
+	<td>GoldenEye 007</td>
+	<td>N64</td>
+	<td>1997</td>
+	<td>Shooter</td>
+	<td>Nintendo</td>
+	<td>5.8</td>
+	<td>2.01</td>
+	<td>0.13</td>
+	<td>0.15</td>
+	<td>8.09</td>
+</tr>
+<tr>
+	<th scope="row">86</th>
+	<td>Mario & Sonic at the Olympic Games</td>
+	<td>Wii</td>
+	<td>2007</td>
+	<td>Sports</td>
+	<td>Sega</td>
+	<td>2.58</td>
+	<td>3.9</td>
+	<td>0.66</td>
+	<td>0.91</td>
+	<td>8.06</td>
+</tr>
+<tr>
+	<th scope="row">87</th>
+	<td>Final Fantasy X</td>
+	<td>PS2</td>
+	<td>2001</td>
+	<td>Role-Playing</td>
+	<td>Sony Computer Entertainment</td>
+	<td>2.91</td>
+	<td>2.07</td>
+	<td>2.73</td>
+	<td>0.33</td>
+	<td>8.05</td>
+</tr>
+<tr>
+	<th scope="row">88</th>
+	<td>Final Fantasy VIII</td>
+	<td>PS</td>
+	<td>1999</td>
+	<td>Role-Playing</td>
+	<td>SquareSoft</td>
+	<td>2.28</td>
+	<td>1.72</td>
+	<td>3.63</td>
+	<td>0.23</td>
+	<td>7.86</td>
+</tr>
+<tr>
+	<th scope="row">89</th>
+	<td>Pokémon Platinum Version</td>
+	<td>DS</td>
+	<td>2008</td>
+	<td>Role-Playing</td>
+	<td>Nintendo</td>
+	<td>2.82</td>
+	<td>1.78</td>
+	<td>2.69</td>
+	<td>0.55</td>
+	<td>7.84</td>
+</tr>
+<tr>
+	<th scope="row">90</th>
+	<td>Pac-Man</td>
+	<td>2600</td>
+	<td>1982</td>
+	<td>Puzzle</td>
+	<td>Atari</td>
+	<td>7.28</td>
+	<td>0.45</td>
+	<td>0</td>
+	<td>0.08</td>
+	<td>7.81</td>
+</tr>
+<tr>
+	<th scope="row">91</th>
+	<td>Grand Theft Auto: Liberty City Stories</td>
+	<td>PSP</td>
+	<td>2005</td>
+	<td>Action</td>
+	<td>Take-Two Interactive</td>
+	<td>2.9</td>
+	<td>2.83</td>
+	<td>0.24</td>
+	<td>1.75</td>
+	<td>7.72</td>
+</tr>
+<tr>
+	<th scope="row">92</th>
+	<td>Super Mario Galaxy 2</td>
+	<td>Wii</td>
+	<td>2010</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>3.66</td>
+	<td>2.42</td>
+	<td>0.98</td>
+	<td>0.64</td>
+	<td>7.69</td>
+</tr>
+<tr>
+	<th scope="row">93</th>
+	<td>Star Wars Battlefront (2015)</td>
+	<td>PS4</td>
+	<td>2015</td>
+	<td>Shooter</td>
+	<td>Electronic Arts</td>
+	<td>2.93</td>
+	<td>3.29</td>
+	<td>0.22</td>
+	<td>1.23</td>
+	<td>7.67</td>
+</tr>
+<tr>
+	<th scope="row">94</th>
+	<td>Call of Duty: Advanced Warfare</td>
+	<td>PS4</td>
+	<td>2014</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>2.8</td>
+	<td>3.3</td>
+	<td>0.14</td>
+	<td>1.37</td>
+	<td>7.6</td>
+</tr>
+<tr>
+	<th scope="row">95</th>
+	<td>The Legend of Zelda: Ocarina of Time</td>
+	<td>N64</td>
+	<td>1998</td>
+	<td>Action</td>
+	<td>Nintendo</td>
+	<td>4.1</td>
+	<td>1.89</td>
+	<td>1.45</td>
+	<td>0.16</td>
+	<td>7.6</td>
+</tr>
+<tr>
+	<th scope="row">96</th>
+	<td>Crash Bandicoot 2: Cortex Strikes Back</td>
+	<td>PS</td>
+	<td>1997</td>
+	<td>Platform</td>
+	<td>Sony Computer Entertainment</td>
+	<td>3.78</td>
+	<td>2.17</td>
+	<td>1.31</td>
+	<td>0.31</td>
+	<td>7.58</td>
+</tr>
+<tr>
+	<th scope="row">97</th>
+	<td>Super Mario Bros. 2</td>
+	<td>NES</td>
+	<td>1988</td>
+	<td>Platform</td>
+	<td>Nintendo</td>
+	<td>5.39</td>
+	<td>1.18</td>
+	<td>0.7</td>
+	<td>0.19</td>
+	<td>7.46</td>
+</tr>
+<tr>
+	<th scope="row">98</th>
+	<td>Super Smash Bros. for Wii U and 3DS</td>
+	<td>3DS</td>
+	<td>2014</td>
+	<td>Fighting</td>
+	<td>Nintendo</td>
+	<td>3.24</td>
+	<td>1.35</td>
+	<td>2.42</td>
+	<td>0.43</td>
+	<td>7.45</td>
+</tr>
+<tr>
+	<th scope="row">99</th>
+	<td>Call of Duty: World at War</td>
+	<td>X360</td>
+	<td>2008</td>
+	<td>Shooter</td>
+	<td>Activision</td>
+	<td>4.79</td>
+	<td>1.9</td>
+	<td>0</td>
+	<td>0.69</td>
+	<td>7.37</td>
+</tr>
+<tr>
+	<th scope="row">100</th>
+	<td>Battlefield 3</td>
+	<td>X360</td>
+	<td>2011</td>
+	<td>Shooter</td>
+	<td>Electronic Arts</td>
+	<td>4.46</td>
+	<td>2.13</td>
+	<td>0.06</td>
+	<td>0.69</td>
+	<td>7.34</td>
+</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+      <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">2020  &copy; Copyright <a class="text-bold-800 grey darken-2" href="https://themeselection.com" target="_blank"></a></span>
+        <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
+        </ul>
+      </div>
+    </footer>
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="app-assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN CHAMELEON  JS-->
+    <script src="app-assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="app-assets/js/core/app.js" type="text/javascript"></script>
+    <!-- END CHAMELEON  JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="app-assets/js/scripts/tables/datatables/datatable-basic.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS-->
+  </body>
+</html>
